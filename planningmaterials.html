@@ -1,0 +1,123 @@
+<html>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <head>
+        <title>FAQ</title>
+        <style>
+         * {
+            text-decoration: none;
+        } 
+        #title  {
+            text-align: center;
+            padding: 50px;
+            color: 90ADC6;
+            background-color: 333652;
+            font-size: 75px;
+            }
+            .flex-container {
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: space-evenly;
+            margin: 0;
+            }
+            
+            .flex-container > div {
+            background-color: 7EC8E3;
+            color: 050A30;
+            margin: 10px;
+            padding: 20px;
+            font-size: 30px;
+            text-align: center;
+            text-decoration: none;
+            }
+            #introText
+            {
+                font-size: 40px;
+                color:90ADC6 ;
+                text-align: center;
+                background-color:333652 ;
+
+            }
+            #FAQ
+            {
+                background-color:7EC8E3;
+                padding: 75px;
+            }
+            #linkWriteup
+            {
+                background-color:7EC8E3;
+                padding-top: 10px;
+                padding-bottom: 40px;
+            }
+            #links
+            {
+                background-color:7EC8E3 ;
+                padding: 75px;
+                position:relative;
+                top:0px;
+
+            }
+            #firstAnswerresponse
+            {
+                background-color:333652;
+                color:90ADC6;
+                font-size:25px;
+                width: 925px;
+            }
+            #secondAnswerresponse
+            {
+                background-color:333652;
+                color:90ADC6;
+                font-size:25px;
+                width: 500px;
+            }
+        </style>
+    </head>
+    <body> 
+        <div id="title">Medical Inequity</div>
+        <div class="flex-container" id ="navBar">
+        <div><a href="homePage.html" target="_blank"><i class="fa fa-fw fa-home"></i>Home</a></div>
+        <div><a href="canadaProfile.html" target="_blank">Canada Profile</a></div>
+        <div><a href="nigeriaProfile.html" target="_blank">Nigeria Profile</a></div>  
+        <div><a href="planningmaterials.html" target="_blank">FAQ</a></div>  
+        </div>
+        <div id="introText">Frequently Asked Questions</div>
+            <div id="FAQ">
+
+                <p>What is the defintion of medical inequity? <button id="firstAnswer" onclick=showAnswer1();><i class="fa fa-fw fa-sort-desc"></i></button></p> 
+                <div id="firstAnswerresponse"></div>
+                <p>Where can I learn more about medical inequity? <button id="secondAnswer" onclick=showAnswer2();><i class="fa fa-fw fa-sort-desc"></i></button></p> 
+                <div id="secondAnswerresponse"></div>
+            </div>
+        </div>   
+        <div id="introText">Here are Some Reliable Websites on Medical Inequity</div>
+        <div id="linkWriteup">
+            <p>Here are an couple of reliable website which will educate you on medical inequity. This sources are written by some of the best health organizations and are an great step towards getting a deeper understanding of medical inequity.</p>
+        </div>
+        <div id="links">
+            <select id="linkBox" class="water">
+                <option value="https://www.who.int/news-room/facts-in-pictures/detail/health-inequities-and-their-causes">World Health Organizations </option>
+                <option value="https://www.medicalnewstoday.com/articles/health-inequity">Medical News Today</option>
+                <option value="https://www.oecd.org/health/inequalities-in-health.htm">OECD Home Page for Medical Inequity Webpages</option>
+            </select>
+            <button id="button" class="linkBoxbutton" onclick="gotoSite()" >Click to Transport to Source</button>
+        </div>
+        
+
+        <script type="text/javascript">
+            function showAnswer1() 
+            {
+                document.getElementById("firstAnswerresponse").innerHTML="Health inequity refers to avoidable differences in health between different groups of people."
+            }
+            function showAnswer2()
+            {
+                document.getElementById("secondAnswerresponse").innerHTML="You can learn more by exploring the links below. "
+            }
+            function gotoSite()
+         {
+            siteSelected = document.getElementById("linkBox").value;
+            window.open(siteSelected);   //opens in a new tab
+            //window.location = siteSelected;    //opens in current tab
+         }
+        </script>           
+    </body>
+</html>

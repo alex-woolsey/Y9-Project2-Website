@@ -1,0 +1,78 @@
+<html>
+    <head>
+        <title> Canada Profile</title>
+        <style>
+        * {
+            text-decoration: none;
+        } 
+        
+        #title  {
+            text-align: center;
+            padding: 50px;
+            color: 90ADC6;
+            background-color: 333652;
+            font-size: 75px;
+            }
+        .flex-container {
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: space-evenly;
+            margin: 0;
+            }
+            
+        .flex-container > div {
+            background-color: 7EC8E3;
+            color: 050A30;
+            margin: 10px;
+            padding: 20px;
+            font-size: 30px;
+            text-align: center;
+            }
+        #missionStatement {
+            background-color: 333652;
+            color: 050A30;
+            margin: 25px;
+            padding: 30px;
+            font-size: 30px;
+            text-align: center;
+            height: 20px;
+            color: 90ADC6;
+            }
+        #canadaGraphs
+        {
+            flex-direction: column;
+        }
+        </style>
+    </head>
+    <body> 
+        <div id="title">Medical Inequity Canada Profile</div>
+        <div class="flex-container" id ="navBar">
+            <div><a href="homePage.html" target="_blank"><i class="fa fa-fw fa-home"></i>Home</a></div>
+            <div><a href="canadaProfile.html" target="_blank">Canada Profile</a></div>
+            <div><a href="nigeriaProfile.html" target="_blank">Nigeria Profile</a></div>  
+            <div><a href="planningmaterials.html" target="_blank">FAQ</a></div>  
+          </div>
+        <div class="flex-container" id="missionStatement">
+            <a>Canada has the fourth best public health system in the world. </a>
+        </div>   
+        <div class="flex-container" id="bodyText">
+            <div id="canadaText">
+                <ul> Canada Overview
+                    <li>Universal Publicly funded system covering all citizens</li>
+                    <li>Administered and delivered by provinces and territories </li>
+                    <li>Covers approximately 70% of all healthcare </li>
+                    <li>Excellent medical care within cities however in rural areas the medical care is more limited.</li>
+                    <li>Infant Mortality is 0.49%</li>
+                </ul>
+            </div>
+            <div id="lifeGraph"><iframe src="https://data.worldbank.org/share/widget?indicators=SP.DYN.LE00.IN&locations=CA" width='400' height='266' frameBorder='0' scrolling="no" ></iframe> </div>
+            <br>
+            <div id="doctorsGraph"><iframe src="https://data.worldbank.org/share/widget?indicators=SH.MED.PHYS.ZS&locations=CA" width='400' height='266' frameBorder='0' scrolling="no" ></iframe></div>
+
+        </div>
+           
+
+
+
+    </body>
+</html>

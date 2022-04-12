@@ -1,0 +1,77 @@
+<html>
+    <head>
+        <title>Nigeria Profile</title>
+        <style>
+        * {
+            text-decoration: none;
+        } 
+        
+        #title  {
+            text-align: center;
+            padding: 50px;
+            color: 90ADC6;
+            background-color: 333652;
+            font-size: 75px;
+            }
+        .flex-container {
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: space-evenly;
+            margin: 0;
+            }
+            
+        .flex-container > div {
+            background-color: 7EC8E3;
+            color: 050A30;
+            margin: 10px;
+            padding: 20px;
+            font-size: 30px;
+            text-align: center;
+            }
+        #missionStatement {
+            background-color: 333652;
+            color: 050A30;
+            margin: 25px;
+            padding: 30px;
+            font-size: 30px;
+            text-align: center;
+            height: 20px;
+            color: 90ADC6;
+            }
+        #canadaGraphs
+        {
+            flex-direction: column;
+        }
+        </style>
+    </head>
+    <body> 
+        <div id="title">Medical Inequity Nigeria Profile</div>
+        <div class="flex-container" id ="navBar">
+            <div><a href="homePage.html" target="_blank"><i class="fa fa-fw fa-home"></i>Home</a></div>
+            <div><a href="canadaProfile.html" target="_blank">Canada Profile</a></div>
+            <div><a href="nigeriaProfile.html" target="_blank">Nigeria Profile</a></div>  
+            <div><a href="planningmaterials.html" target="_blank">FAQ</a></div>  
+          </div>
+        <div class="flex-container" id="missionStatement">
+            <a>Nigeria has the 144th Best Healthcare System in the World. </a>
+        </div>   
+        <div class="flex-container" id="bodyText">
+            <div id="nigeriaText">
+            <ul> Nigeria Overview
+                <li>Private system- Vast majority is paid out of pocket</li>
+                <li>Most Nigerians do not have any insurance.</li>
+                <li>Poorest lack access to medical care of any kind.</li>
+                <li>Infant Mortality is 11.27%</li>
+            </ul>
+            </div>
+            <div id="lifeGraph"><iframe src="https://data.worldbank.org/share/widget?indicators=SP.DYN.LE00.IN&locations=NG" width='400' height='266' frameBorder='0' scrolling="no" ></iframe> </div>
+            <br>
+            <div id="doctorsGraph"><iframe src="https://data.worldbank.org/share/widget?indicators=SH.MED.PHYS.ZS&locations=NG" width='400' height='266' frameBorder='0' scrolling="no" ></iframe></div>
+
+        </div>
+           
+
+
+
+    </body>
+</html>
